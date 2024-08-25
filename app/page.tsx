@@ -1,7 +1,10 @@
+import Link from "next/link";
+import Question_1 from "./question_1/page";
+
 const Readallitems = () => {
   return (
     <div>
-      <h1>こんにちは</h1>
+      <Question_1 />
     </div>
   );
 }
