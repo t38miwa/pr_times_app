@@ -1,0 +1,66 @@
+/*header*/
+header {
+  background-color: #007bff; /* ヘッダーの背景色を青に設定 */
+  color: white; /* テキストの色を白に設定 */
+  padding: 20px; /* ヘッダーの内側にパディングを追加 */
+  text-align: center; /* テキストを中央揃え */
+}
+
+header h1 {
+  font-size: 28px; /* ヘッダータイトルのフォントサイズを設定 */
+  margin: 0; /* デフォルトのマージンを削除 */
+}
+
+header div {
+  max-width: 1200px; /* ヘッダーのコンテンツ幅を制限 */
+  margin: 0 auto; /* コンテンツを中央に配置 */
+}
+
+
+/*question_1*/
+.question-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.question-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.question-container button {
+  display: block;  /* ボタンをブロック要素にして縦並びにする */
+  width: 100%;  /* ボタンをコンテナの幅に合わせる */
+  max-width: 300px;  /* ボタンの最大幅を設定 */
+  padding: 10px 20px;
+  margin: 10px auto;  /* 自動で中央揃え */
+  font-size: 16px;
+  border: 2px solid #007bff;
+  background-color: #ffffff;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.question-container button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+
+/*footer*/
+footer {
+  background-color: #007bff; /* フッターの背景色を青に設定 */
+  color: white; /* テキストの色を白に設定 */
+  text-align: center; /* テキストを中央揃え */
+  padding: 10px 20px; /* フッターの内側にパディングを追加 */
+  position: fixed; /* フッターをページの下部に固定 */
+  bottom: 0; /* 下部に固定するための設定 */
+  width: 100%; /* フッターの幅をページ全体に広げる */
+}
+
+footer p {
+  margin: 0; /* デフォルトのマージンを削除 */
+  font-size: 14px; /* フッターのフォントサイズを調整 */
+}
