@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Question_1 = () => {
     return (
         <div className="question-container">
@@ -7,6 +9,10 @@ const Question_1 = () => {
             <button>資本金5000万円以下</button>
             <button>資本金1億円以下</button>
             <button>資本金10億円以下</button>
+
+            <Link href={`/question_2`}>
+            <button>次へ</button>
+            </Link>
         </div>
     );
 }
