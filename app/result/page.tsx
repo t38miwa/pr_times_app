@@ -29,7 +29,7 @@ const Result = () => {
     try {
       const result = await getSingleItem();
       setData(result); // データをstateに保存
-    } catch (err) {
+    } catch (err:any) {
       setError(err.message); // エラーメッセージをstateに保存
     }
   };
