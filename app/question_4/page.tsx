@@ -8,9 +8,11 @@ const Question_4 = () => {
             <button>中年層</button>
             <button>高齢者層</button>
 
-            <Link href={`/question_5`}>
-            <button>次へ</button>
-            </Link>
+            <div className="next-button-container">
+                <Link href={`/question_5`} passHref>
+                <button className="next-button">次へ</button>
+                </Link>
+            </div>
         </div>
     );
 }
