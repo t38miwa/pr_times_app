@@ -9,9 +9,11 @@ const Question_5 = () => {
             <button>月１０件</button>
             <button>1年契約</button>
 
-            <Link href={`/result`}>
-            <button>結果を見る</button>
-            </Link>
+            <div className="next-button-container">
+                <Link href={`/result`} passHref>
+                <button className="next-button">結果へ</button>
+                </Link>
+            </div>
         </div>
     );
 }

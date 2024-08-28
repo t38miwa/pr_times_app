@@ -10,9 +10,11 @@ const Question_3 = () => {
                 <option>雑貨店</option>
             </select>
 
-            <Link href={`/question_4`}>
-            <button>次へ</button>
-            </Link>
+            <div className="next-button-container">
+                <Link href={`/question_4`} passHref>
+                <button className="next-button">次へ</button>
+                </Link>
+            </div>
         </div>
     );
 }

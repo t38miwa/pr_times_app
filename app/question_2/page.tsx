@@ -11,9 +11,11 @@ const Question_2 = () => {
                 <option>建設業</option>
             </select>
             
-            <Link href={`/question_3`}>
-            <button>次へ</button>
-            </Link>
+            <div className="next-button-container">
+                <Link href={`/question_3`} passHref>
+                <button className="next-button">次へ</button>
+                </Link>
+            </div>
         </div>
     );
 }

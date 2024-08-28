@@ -1,6 +1,10 @@
+:root {
+  --primary-color: #294c7a; /* プライマリカラーとして定義 */
+}
+
 /*header*/
 header {
-  background-color: #007bff; /* ヘッダーの背景色を青に設定 */
+  background-color: var(--primary-color); /* ヘッダーの背景色をプライマリカラーに設定 */
   color: white; /* テキストの色を白に設定 */
   padding: 20px; /* ヘッダーの内側にパディングを追加 */
   text-align: center; /* テキストを中央揃え */
@@ -16,8 +20,7 @@ header div {
   margin: 0 auto; /* コンテンツを中央に配置 */
 }
 
-
-/*question_1*/
+/* Question_2 specific styling */
 .question-container {
   text-align: center;
   margin: 20px;
@@ -26,32 +29,49 @@ header div {
 .question-container h1 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: #333; /* 一貫したテキストカラーを使用 */
+}
+
+.question-container select {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid var(--primary-color); /* プライマリカラーを使用 */
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: var(--primary-color); /* プライマリカラーを使用 */
 }
 
 .question-container button {
-  display: block;  /* ボタンをブロック要素にして縦並びにする */
-  width: 100%;  /* ボタンをコンテナの幅に合わせる */
-  max-width: 300px;  /* ボタンの最大幅を設定 */
+  display: block;
+  width: 100%;
+  max-width: 300px;
   padding: 10px 20px;
-  margin: 10px auto;  /* 自動で中央揃え */
+  margin: 10px auto;
   font-size: 16px;
-  border: 2px solid #007bff;
+  border: 2px solid var(--primary-color); /* プライマリカラーを使用 */
   background-color: #ffffff;
-  color: #007bff;
+  color: var(--primary-color); /* プライマリカラーを使用 */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .question-container button:hover {
-  background-color: #007bff;
+  background-color: var(--primary-color); /* プライマリカラーを使用 */
   color: #ffffff;
 }
 
+.next-button-container {
+  text-align: center; /* ボタンを中央に配置 */
+  margin-top: 40px; /* ボタンをさらに下に配置するためのマージン */
+}
 
 /*footer*/
 footer {
-  background-color: #007bff; /* フッターの背景色を青に設定 */
+  background-color: var(--primary-color); /* フッターの背景色をプライマリカラーに設定 */
   color: white; /* テキストの色を白に設定 */
   text-align: center; /* テキストを中央揃え */
   padding: 10px 20px; /* フッターの内側にパディングを追加 */
